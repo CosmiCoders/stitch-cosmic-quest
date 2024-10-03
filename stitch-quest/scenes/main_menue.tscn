@@ -1,0 +1,103 @@
+[gd_scene load_steps=8 format=3 uid="uid://c8ov0nn0sh7k3"]
+
+[ext_resource type="Script" path="res://main_menue.gd" id="1_bx44h"]
+[ext_resource type="Texture2D" uid="uid://gj7gfhpemge1" path="res://sprites/fondosdepantalla, wallpapers, inspiration, inspiracion, space, espacion, galaxy, galaxia, black, dark, stars, estrellas, night, noche.jpg" id="1_pettx"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="2_p0ivh"]
+[ext_resource type="Texture2D" uid="uid://sfhmm57bqutm" path="res://sprites/Remove-bg.ai_1727986105974.png" id="4_7vf38"]
+[ext_resource type="FontFile" uid="uid://4v17l4oeour4" path="res://fonts/COOPBL.TTF" id="5_sovyc"]
+
+[sub_resource type="Theme" id="Theme_3lf7e"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mglgb"]
+bg_color = Color(0.314316, 0.314316, 0.314316, 0.415686)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[node name="main menue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bx44h")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(663.108, 382.018)
+rotation = 1.5708
+scale = Vector2(1.04353, 1.14684)
+texture = ExtResource("1_pettx")
+
+[node name="start_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.411
+anchor_top = 0.819
+anchor_right = 0.599
+anchor_bottom = 0.92
+offset_left = -10.472
+offset_top = -129.712
+offset_right = 18.952
+offset_bottom = -119.16
+theme = SubResource("Theme_3lf7e")
+theme_override_fonts/font = ExtResource("2_p0ivh")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/normal = SubResource("StyleBoxFlat_mglgb")
+text = "start"
+
+[node name="exit_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.403
+anchor_top = 0.545
+anchor_right = 0.593
+anchor_bottom = 0.641
+offset_left = 2.74396
+offset_top = 173.84
+offset_right = 17.864
+offset_bottom = 188.632
+theme = SubResource("Theme_3lf7e")
+theme_override_fonts/font = ExtResource("2_p0ivh")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/normal = SubResource("StyleBoxFlat_mglgb")
+text = "EXIT"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.23
+anchor_top = 0.082
+anchor_right = 0.766
+anchor_bottom = 0.319
+offset_left = -46.96
+offset_top = 11.864
+offset_right = 129.568
+offset_bottom = 4.28799
+theme_override_fonts/font = ExtResource("2_p0ivh")
+theme_override_font_sizes/font_size = 100
+text = "Stitch's Quest"
+
+[node name="stitch" type="Sprite2D" parent="."]
+position = Vector2(152, 515)
+scale = Vector2(0.466033, 0.398098)
+texture = ExtResource("4_7vf38")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.269
+anchor_top = 0.33
+anchor_right = 0.799
+anchor_bottom = 0.432
+offset_left = 0.111969
+offset_top = 0.159988
+offset_right = -0.447998
+offset_bottom = 0.0639954
+theme_override_fonts/font = ExtResource("5_sovyc")
+theme_override_font_sizes/font_size = 35
+text = "Navigating the Exoplanet Frontier"
+
+[connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]

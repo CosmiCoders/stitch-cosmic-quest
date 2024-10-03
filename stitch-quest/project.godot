@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="stitch quest"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="res://scenes/main_menue.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"

@@ -15,3 +15,7 @@ func _on_exit_button_pressed() -> void:
 
 func _on_resume_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/main_neutral_stitch.tscn")
+
+
+func _on_resources_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/resources.tscn")

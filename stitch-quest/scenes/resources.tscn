@@ -1,0 +1,117 @@
+[gd_scene load_steps=9 format=3 uid="uid://dinjsxg7g3esb"]
+
+[ext_resource type="Script" path="res://resources.gd" id="1_21238"]
+[ext_resource type="Texture2D" uid="uid://vc76jhq6fku5" path="res://Pause.png" id="1_fb08w"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="2_ge8tv"]
+[ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="3_3bvt4"]
+
+[sub_resource type="Theme" id="Theme_xrglm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtyts"]
+bg_color = Color(0.176471, 0.180392, 0.298039, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[sub_resource type="Theme" id="Theme_itnjo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q3vdn"]
+bg_color = Color(0.176471, 0.180392, 0.298039, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[node name="Resources" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_21238")
+
+[node name="Pause" type="Sprite2D" parent="."]
+position = Vector2(575.75, 324)
+scale = Vector2(0.869811, 0.782609)
+texture = ExtResource("1_fb08w")
+
+[node name="Label" type="Label" parent="Pause"]
+offset_left = -661.0
+offset_top = -327.333
+offset_right = 661.0
+offset_bottom = -183.333
+theme_override_fonts/font = ExtResource("2_ge8tv")
+theme_override_font_sizes/font_size = 69
+text = "Resources"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 180.0
+offset_right = 870.0
+offset_bottom = 341.0
+theme_override_fonts/font = ExtResource("3_3bvt4")
+theme_override_font_sizes/font_size = 26
+text = "To learn more about exoplanets visit
+ https://science.nasa.gov/exoplanets/
+
+OR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="url_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.937
+anchor_right = 1.0
+anchor_bottom = -0.937
+offset_left = 462.0
+offset_top = 1607.18
+offset_right = -443.0
+offset_bottom = 1024.17
+theme = SubResource("Theme_xrglm")
+theme_override_fonts/font = ExtResource("2_ge8tv")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_xtyts")
+text = "Click here!"
+
+[node name="exit_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.386
+anchor_top = 0.58
+anchor_right = 0.606
+anchor_bottom = 0.67
+offset_left = 510.328
+offset_top = 184.16
+offset_right = 423.888
+offset_bottom = 194.84
+theme = SubResource("Theme_itnjo")
+theme_override_fonts/font = ExtResource("2_ge8tv")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_q3vdn")
+text = "Exit"
+
+[node name="back_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.937
+anchor_right = 1.0
+anchor_bottom = -0.937
+offset_left = 30.0
+offset_top = 1283.18
+offset_right = -971.0
+offset_bottom = 699.176
+theme = SubResource("Theme_itnjo")
+theme_override_fonts/font = ExtResource("2_ge8tv")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_q3vdn")
+text = "Back"
+
+[connection signal="pressed" from="url_button" to="." method="_on_url_button_pressed"]
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="back_button" to="." method="_on_back_button_pressed"]

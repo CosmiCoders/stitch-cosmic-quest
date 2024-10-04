@@ -241,7 +241,7 @@ offset_right = 1057.0
 offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("5_hp544")
 theme_override_font_sizes/font_size = 26
-text = "Music"
+text = "Mute"
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]

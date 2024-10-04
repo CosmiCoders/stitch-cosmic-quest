@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://fxmfllynak1"]
+[gd_scene load_steps=6 format=3 uid="uid://pkl8gbror3mj"]
 
-[ext_resource type="Script" path="res://sprites/pause.gd" id="1_esg8c"]
-[ext_resource type="Texture2D" uid="uid://dwvel1vcmxcs8" path="res://Pause.png" id="2_gg167"]
+[ext_resource type="Script" path="res://pause.gd" id="1_eds2f"]
+[ext_resource type="Texture2D" uid="uid://vc76jhq6fku5" path="res://Pause.png" id="2_gg167"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_fltmd"]
 
 [sub_resource type="Theme" id="Theme_h3y65"]
@@ -20,7 +20,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_esg8c")
+script = ExtResource("1_eds2f")
 
 [node name="PauseBG" type="Sprite2D" parent="."]
 position = Vector2(575.25, 324)

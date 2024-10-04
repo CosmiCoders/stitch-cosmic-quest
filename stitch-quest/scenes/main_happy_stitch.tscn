@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://ul6srxmwd7fk"]
+
+[ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images/Main Screen - Happy Stitch.png" id="1_l34cu"]
+[ext_resource type="Script" path="res://main_happy_stitch.gd" id="1_tvbhe"]
+[ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="2_kphwo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oog1r"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.870588, 0.905882, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="main_happy_stitch" type="Node2D"]
+script = ExtResource("1_tvbhe")
+
+[node name="MainScreen-HappyStitch" type="Sprite2D" parent="."]
+position = Vector2(576, 324.5)
+scale = Vector2(0.8, 0.782871)
+texture = ExtResource("1_l34cu")
+
+[node name="pause_button" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 23.0
+offset_right = 96.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_kphwo")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_oog1r")
+text = "| |"
+icon_alignment = 1
+
+[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]

@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg4ulxaijliv5"]
+
+[ext_resource type="Script" path="res://main_neutral_stitch.gd" id="1_hndrn"]
+[ext_resource type="Texture2D" uid="uid://cdgv6pqdfr22y" path="res://images/Main Screen - Neutral Stitch.png" id="1_ktje5"]
+[ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="2_0pf8x"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ko8f8"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.870588, 0.905882, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="main_neutral_stitch" type="Node2D"]
+position = Vector2(-1, 0)
+script = ExtResource("1_hndrn")
+
+[node name="MainScreen-NeutralStitch" type="Sprite2D" parent="."]
+position = Vector2(576.5, 324.5)
+scale = Vector2(0.799306, 0.782871)
+texture = ExtResource("1_ktje5")
+
+[node name="pause_button" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 23.0
+offset_right = 96.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_0pf8x")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ko8f8")
+text = "| |"
+icon_alignment = 1
+
+[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]

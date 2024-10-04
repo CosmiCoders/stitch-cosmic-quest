@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://ul6srxmwd7fk"]
+[gd_scene load_steps=18 format=3 uid="uid://ul6srxmwd7fk"]
 
 [ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images/Main Screen - Happy Stitch.png" id="1_l34cu"]
 [ext_resource type="Script" path="res://main_happy_stitch.gd" id="1_tvbhe"]
 [ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="2_kphwo"]
+[ext_resource type="AudioStream" uid="uid://bq0mwi5dwulsk" path="res://audio/mainBGsound.wav" id="4_fsk8c"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="5_wgeqk"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oog1r"]
 bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
@@ -11,6 +13,138 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(1, 0.870588, 0.905882, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7nve"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_apgkh"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wuuij"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8of1v"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.372549, 0.00392157, 0.262745, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fexoi"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pvecp"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nn881"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.972549, 0.839216, 0.886275, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sxffv"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4imy"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ici0n"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_notkb"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -35,4 +169,32 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_oog1r")
 text = "| |"
 icon_alignment = 1
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_fsk8c")
+
+[node name="MuteButton" type="CheckButton" parent="."]
+offset_left = 943.0
+offset_top = 26.0
+offset_right = 1033.0
+offset_bottom = 53.0
+scale = Vector2(2, 2)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_wgeqk")
+theme_override_font_sizes/font_size = 11
+theme_override_styles/focus = SubResource("StyleBoxFlat_t7nve")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_apgkh")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_wuuij")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_8of1v")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fexoi")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_pvecp")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nn881")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_sxffv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_k4imy")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ici0n")
+theme_override_styles/normal = SubResource("StyleBoxFlat_notkb")
+text = " Music"
+icon_alignment = 1
+
 [connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
+[connection signal="toggled" from="MuteButton" to="." method="_on_mute_button_toggled"]

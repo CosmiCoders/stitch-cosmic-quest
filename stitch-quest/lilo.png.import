@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7u3slkqc5eht"
-path="res://.godot/imported/lilo.png-e607d0e0887b8b1df848c5f0e404f10b.ctex"
+path="res://.godot/imported/lilo.png-a36365c1570615ad6bd5b5352e149248.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/lilo.png"
-dest_files=["res://.godot/imported/lilo.png-e607d0e0887b8b1df848c5f0e404f10b.ctex"]
+source_file="res://lilo.png"
+dest_files=["res://.godot/imported/lilo.png-a36365c1570615ad6bd5b5352e149248.ctex"]
 
 [params]
 

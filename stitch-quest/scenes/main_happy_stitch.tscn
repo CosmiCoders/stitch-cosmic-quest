@@ -217,7 +217,6 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_sxffv")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_k4imy")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ici0n")
 theme_override_styles/normal = SubResource("StyleBoxFlat_notkb")
-text = " Music"
 icon_alignment = 1
 
 [node name="pause_button" type="Button" parent="."]
@@ -233,6 +232,15 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_iwxlc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_7x0qf")
 text = "| |"
 icon_alignment = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 962.0
+offset_top = 34.0
+offset_right = 1057.0
+offset_bottom = 72.0
+theme_override_fonts/font = ExtResource("5_wgeqk")
+theme_override_font_sizes/font_size = 26
+text = "Music"
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
 [connection signal="toggled" from="MuteButton" to="." method="_on_mute_button_toggled"]

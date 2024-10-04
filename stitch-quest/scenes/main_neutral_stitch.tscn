@@ -195,6 +195,9 @@ position = Vector2(576.5, 324.5)
 scale = Vector2(0.799306, 0.782871)
 texture = ExtResource("1_ktje5")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_odj4v")
+
 [node name="pause_button" type="Button" parent="."]
 offset_left = 35.0
 offset_top = 23.0
@@ -209,10 +212,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_ko8f8")
 text = "| |"
 icon_alignment = 1
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_odj4v")
-
-[node name="MuteButton" type="CheckButton" parent="AudioStreamPlayer2D"]
+[node name="MuteButton" type="CheckButton" parent="."]
 offset_left = 943.0
 offset_top = 26.0
 offset_right = 1033.0
@@ -232,9 +232,17 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_78ewn")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jrmte")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_4444u")
 theme_override_styles/normal = SubResource("StyleBoxFlat_q1s3n")
-text = " Music"
 icon_alignment = 1
 
-[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[node name="Label" type="Label" parent="."]
+offset_left = 962.0
+offset_top = 34.0
+offset_right = 1057.0
+offset_bottom = 72.0
+theme_override_fonts/font = ExtResource("5_hp544")
+theme_override_font_sizes/font_size = 26
+text = "Music"
+
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
-[connection signal="toggled" from="AudioStreamPlayer2D/MuteButton" to="." method="_on_mute_button_toggled"]
+[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="toggled" from="MuteButton" to="." method="_on_mute_button_toggled"]

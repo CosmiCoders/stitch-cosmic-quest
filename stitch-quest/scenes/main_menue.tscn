@@ -14,7 +14,7 @@ corner_radius_top_right = 17
 corner_radius_bottom_right = 17
 corner_radius_bottom_left = 17
 
-[node name="main menue" type="Control"]
+[node name="main menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -29,7 +29,7 @@ position = Vector2(577, 327.5)
 scale = Vector2(0.816667, 0.834541)
 texture = ExtResource("2_yswti")
 
-[node name="Label_1" type="Label" parent="."]
+[node name="GameTitle" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.316
@@ -44,17 +44,17 @@ theme_override_fonts/font = ExtResource("2_p0ivh")
 theme_override_font_sizes/font_size = 38
 text = "Stitch's Cosmic Quest"
 
-[node name="Label_2" type="Label" parent="Label_1"]
+[node name="GameSubTitle" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.081
 anchor_top = 1.02
 anchor_right = 0.869
 anchor_bottom = 1.653
-offset_left = -0.0169983
-offset_top = 0.0199966
-offset_right = -0.132996
-offset_bottom = 0.00299072
+offset_left = 301.42
+offset_top = -218.96
+offset_right = 301.304
+offset_bottom = -218.977
 theme_override_fonts/font = ExtResource("5_q1c1h")
 theme_override_font_sizes/font_size = 21
 text = "Navigating The Exoplanet Frontier"

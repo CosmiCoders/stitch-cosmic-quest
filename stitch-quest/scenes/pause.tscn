@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://fxmfllynak1"]
+
+[ext_resource type="Script" path="res://sprites/pause.gd" id="1_esg8c"]
+[ext_resource type="Texture2D" uid="uid://dwvel1vcmxcs8" path="res://Pause.png" id="2_gg167"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_fltmd"]
+
+[sub_resource type="Theme" id="Theme_h3y65"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ja1g4"]
+bg_color = Color(0.176471, 0.180392, 0.298039, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[node name="Pause" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_esg8c")
+
+[node name="PauseBG" type="Sprite2D" parent="."]
+position = Vector2(575.25, 324)
+scale = Vector2(0.868302, 0.782609)
+texture = ExtResource("2_gg167")
+
+[node name="exit_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.386
+anchor_top = 0.58
+anchor_right = 0.606
+anchor_bottom = 0.67
+offset_left = 8.328
+offset_top = 37.16
+offset_right = 10.888
+offset_bottom = 41.84
+theme = SubResource("Theme_h3y65")
+theme_override_fonts/font = ExtResource("3_fltmd")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja1g4")
+text = "Exit"
+
+[node name="resources_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.937
+anchor_right = 1.0
+anchor_bottom = -0.937
+offset_left = 455.0
+offset_top = 1424.18
+offset_right = -450.0
+offset_bottom = 841.176
+theme = SubResource("Theme_h3y65")
+theme_override_fonts/font = ExtResource("3_fltmd")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja1g4")
+text = "Resources"
+
+[node name="resume_button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.937
+anchor_right = 1.0
+anchor_bottom = -0.937
+offset_left = 454.0
+offset_top = 1546.18
+offset_right = -445.0
+offset_bottom = 962.176
+theme = SubResource("Theme_h3y65")
+theme_override_fonts/font = ExtResource("3_fltmd")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxFlat_ja1g4")
+text = "Resume"
+
+[connection signal="pressed" from="exit_button" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="resume_button" to="." method="_on_resume_button_pressed"]

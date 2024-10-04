@@ -1,22 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://ul6srxmwd7fk"]
+[gd_scene load_steps=21 format=3 uid="uid://ul6srxmwd7fk"]
 
 [ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images/Main Screen - Happy Stitch.png" id="1_l34cu"]
 [ext_resource type="Script" path="res://main_happy_stitch.gd" id="1_tvbhe"]
 [ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="2_kphwo"]
 [ext_resource type="AudioStream" uid="uid://bq0mwi5dwulsk" path="res://audio/mainBGsound.wav" id="4_fsk8c"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="5_wgeqk"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oog1r"]
-bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(1, 0.870588, 0.905882, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7nve"]
 bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
@@ -150,6 +138,54 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wwh4"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n16jr"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iwxlc"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.988235, 0.854902, 0.894118, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7x0qf"]
+bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(1, 0.870588, 0.905882, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [node name="main_happy_stitch" type="Node2D"]
 script = ExtResource("1_tvbhe")
 
@@ -157,17 +193,6 @@ script = ExtResource("1_tvbhe")
 position = Vector2(576, 324.5)
 scale = Vector2(0.8, 0.782871)
 texture = ExtResource("1_l34cu")
-
-[node name="pause_button" type="Button" parent="."]
-offset_left = 35.0
-offset_top = 23.0
-offset_right = 96.0
-offset_bottom = 78.0
-theme_override_fonts/font = ExtResource("2_kphwo")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_oog1r")
-text = "| |"
-icon_alignment = 1
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_fsk8c")
@@ -195,6 +220,20 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_notkb")
 text = " Music"
 icon_alignment = 1
 
-[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[node name="pause_button" type="Button" parent="."]
+offset_left = 35.0
+offset_top = 23.0
+offset_right = 96.0
+offset_bottom = 78.0
+theme_override_fonts/font = ExtResource("2_kphwo")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_0wwh4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_n16jr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iwxlc")
+theme_override_styles/normal = SubResource("StyleBoxFlat_7x0qf")
+text = "| |"
+icon_alignment = 1
+
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
 [connection signal="toggled" from="MuteButton" to="." method="_on_mute_button_toggled"]
+[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]

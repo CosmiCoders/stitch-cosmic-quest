@@ -17,8 +17,6 @@ func _on_pause_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/pause.tscn")
 
 	
-
-
 func _on_mute_button_toggled(button_pressed):
 	if button_pressed:
 		$AudioStreamPlayer2D.volume_db = -80  # Mute the audio (set volume to minimum)

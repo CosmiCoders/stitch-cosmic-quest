@@ -8,7 +8,7 @@ var dialogue = [
 	"Wait... where are we? Hmm… this place feels...familiar.","YES! I know this place! It’s an exoplanet , Lilo and I read about exoplanets!.............."
 ]
 
-var typing_speed = 0.05  # The delay between each letter (in seconds)
+var typing_speed = 0.02 # The delay between each letter (in seconds)
 var current_text = ""     # Stores the current text being shown
 var char_index = 0        # Keeps track of the current character index
 var section_index = 0     # Keeps track of the current dialogue section

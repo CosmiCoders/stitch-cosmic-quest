@@ -6,7 +6,7 @@ var dialogue = [
 	"We’re also discovering mini-Neptunes, planets smaller than Neptune and bigger than Earth. No planets of this size or type exist in our solar system.",
 	"Both also contain water, ammonia, and methane. Since these three chemicals are typically found frozen as ices in the cold outer solar system, Uranus and Neptune are often referred to as 'ice giants.'"
 ]
-var typing_speed = 0.05  # The delay between each letter (in seconds)
+var typing_speed = 0.02  # The delay between each letter (in seconds)
 var current_text = ""     # Stores the current text being shown
 var char_index = 0        # Keeps track of the current character index
 var section_index = 0     # Keeps track of the current dialogue section

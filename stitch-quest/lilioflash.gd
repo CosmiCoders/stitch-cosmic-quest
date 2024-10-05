@@ -6,7 +6,7 @@ var dialogue = [
 	"Lilo speaking in a flashback:\nAnd get this—they come in all shapes and sizes!\nThere are four main types of exoplanets. Lemme show you.."
 ]
 
-var typing_speed = 0.05  # The delay between each letter (in seconds)
+var typing_speed = 0.02  # The delay between each letter (in seconds)
 var current_text = ""     # Stores the current text being shown
 var char_index = 0        # Keeps track of the current character index
 var section_index = 0     # Keeps track of the current dialogue section

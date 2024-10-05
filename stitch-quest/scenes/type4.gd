@@ -7,7 +7,7 @@ var dialogue = [
 	"Kepler-11 b is a terrestrial planet 10 times closer to its star than Earth is to the Sun."
 ]
 
-var typing_speed = 0.05  # The delay between each letter (in seconds)
+var typing_speed = 0.02 # The delay between each letter (in seconds)
 var current_text = ""     # Stores the current text being shown
 var char_index = 0        # Keeps track of the current character index
 var section_index = 0     # Keeps track of the current dialogue section

@@ -1,11 +1,10 @@
 extends Label
+
+# Dialogue text
 var dialogue = [
-	"Rude much? What gives??",
-	"[Suddenly, glowing alien symbols appear on the ground in front of the portal. Stitch squints at them.]",
-	"Inscription (mysterious voice):",
-	"“To open the portal, you must first answer: Where are you?”",
-	"Great. Now we’ve gotta play alien trivia to get home. (thinks for a moment, tapping his chin)",
-	"Wait... where are we? Hmm… this place feels...familiar.","YES! I know this place! It’s an exoplanet , Lilo and I read about exoplanets!.............."
+	"Super-Earths are typically terrestrial planets that may or may not have atmospheres. They are more massive than Earth, but lighter than ice giants.",
+	"A star like our Sun, Kepler-452b was the first Earth-size planet discovered around a near solar twin.",
+	"A super-Earth planet could be hiding at the edge of our own solar system."
 ]
 
 var typing_speed = 0.05  # The delay between each letter (in seconds)
@@ -16,6 +15,8 @@ var is_typing = false     # Whether or not the dialogue is currently typing
 
 # Called when the node enters the scene tree
 func _ready():
+	# Change font color to black
+	add_theme_color_override("font_color", Color.BLACK)
 	display_next_section()
 
 # Display the next section of the dialogue
@@ -29,7 +30,7 @@ func display_next_section():
 		typewrite_text() # Start typewriting effect
 	else:
 		# All sections have been shown, you can handle what happens next here
-		get_tree().change_scene_to_file("res://scenes/lilioflash.tscn")
+		get_tree().change_scene_to_file("res://scenes/book_scene_4.tscn")
 
 # Typewriting effect
 func typewrite_text() -> void:

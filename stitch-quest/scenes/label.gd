@@ -1,11 +1,9 @@
 extends Label
+
+# Dialogue text
 var dialogue = [
-	"Rude much? What gives??",
-	"[Suddenly, glowing alien symbols appear on the ground in front of the portal. Stitch squints at them.]",
-	"Inscription (mysterious voice):",
-	"“To open the portal, you must first answer: Where are you?”",
-	"Great. Now we’ve gotta play alien trivia to get home. (thinks for a moment, tapping his chin)",
-	"Wait... where are we? Hmm… this place feels...familiar.","YES! I know this place! It’s an exoplanet , Lilo and I read about exoplanets!.............."
+	"Lilo speaking in a flashback:\nCheck it out!\nExoplanets are planets that are outside our solar system.",
+	"Lilo speaking in a flashback:\nAnd get this—they come in all shapes and sizes!\nThere are four main types of exoplanets. Lemme show you.."
 ]
 
 var typing_speed = 0.05  # The delay between each letter (in seconds)
@@ -29,7 +27,7 @@ func display_next_section():
 		typewrite_text() # Start typewriting effect
 	else:
 		# All sections have been shown, you can handle what happens next here
-		get_tree().change_scene_to_file("res://scenes/lilioflash.tscn")
+		get_tree().change_scene_to_file("res://scenes/book_scene.tscn")
 
 # Typewriting effect
 func typewrite_text() -> void:

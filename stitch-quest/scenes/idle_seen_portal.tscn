@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bohsvsv46rm7f"]
+[gd_scene load_steps=22 format=3 uid="uid://dablcj0m528w"]
 
 [ext_resource type="Script" path="res://main_neutral_stitch.gd" id="1_j70x1"]
 [ext_resource type="Texture2D" uid="uid://cdgv6pqdfr22y" path="res://images_Videos/Main Screen - Neutral Stitch.png" id="2_m62rc"]

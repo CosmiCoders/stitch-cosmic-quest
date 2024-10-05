@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://d18c0sj82asbi"]
+
+[ext_resource type="Texture2D" uid="uid://bb31oemammkc8" path="res://images_Videos/BOOK BG.png" id="1_srhbi"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="2_2fmjq"]
+[ext_resource type="Script" path="res://scenes/type4.gd" id="3_qenfu"]
+[ext_resource type="Texture2D" uid="uid://dlali7gwbikyu" path="res://images_Videos/test.png" id="4_87cui"]
+
+[node name="BOOK SCENE4" type="Node2D"]
+
+[node name="BookBg" type="Sprite2D" parent="."]
+position = Vector2(578, 329)
+scale = Vector2(0.808333, 0.794686)
+texture = ExtResource("1_srhbi")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 242.0
+offset_top = 120.0
+offset_right = 512.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("2_2fmjq")
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_qenfu")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 635.0
+offset_top = 424.0
+offset_right = 973.0
+offset_bottom = 541.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_2fmjq")
+text = "TRAPPIST-1 terrestrials
+The 7 Earth-size planets in the TRAPPIST-1 system are thought to be terrestrial (4 are super-Earth size)."
+autowrap_mode = 3
+
+[node name="Test" type="Sprite2D" parent="."]
+position = Vector2(802, 267)
+scale = Vector2(0.438222, 0.469199)
+texture = ExtResource("4_87cui")

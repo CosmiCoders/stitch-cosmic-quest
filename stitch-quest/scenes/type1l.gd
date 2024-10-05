@@ -1,11 +1,11 @@
 extends Label
+
+# Dialogue text
 var dialogue = [
-	"Rude much? What gives??",
-	"[Suddenly, glowing alien symbols appear on the ground in front of the portal. Stitch squints at them.]",
-	"Inscription (mysterious voice):",
-	"“To open the portal, you must first answer: Where are you?”",
-	"Great. Now we’ve gotta play alien trivia to get home. (thinks for a moment, tapping his chin)",
-	"Wait... where are we? Hmm… this place feels...familiar.","YES! I know this place! It’s an exoplanet , Lilo and I read about exoplanets!.............."
+	"Gas giants: large planet mostly composed of helium and/or hydrogen are planets the size of Saturn or Jupiter, the largest planet in our solar system, or much, much larger.",
+	"These large planets make such tight orbits that they cause a pronounced 'wobble' in their stars, tugging their stellar hosts this way and that, and causing a measurable shift in the spectrum of light from the stars.",
+	"That made hot Jupiters easier to detect in the early days of planet hunting.",
+	"HIP 67522 b, thought to be the youngest hot Jupiter ever found."
 ]
 
 var typing_speed = 0.05  # The delay between each letter (in seconds)
@@ -16,6 +16,8 @@ var is_typing = false     # Whether or not the dialogue is currently typing
 
 # Called when the node enters the scene tree
 func _ready():
+	# Change font color to black
+	add_theme_color_override("font_color", Color.BLACK)
 	display_next_section()
 
 # Display the next section of the dialogue
@@ -29,7 +31,7 @@ func display_next_section():
 		typewrite_text() # Start typewriting effect
 	else:
 		# All sections have been shown, you can handle what happens next here
-		get_tree().change_scene_to_file("res://scenes/lilioflash.tscn")
+		get_tree().change_scene_to_file("res://scenes/book_scene_2.tscn")
 
 # Typewriting effect
 func typewrite_text() -> void:

@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://coybk3q3dune4"]
+
+[ext_resource type="Texture2D" uid="uid://bb31oemammkc8" path="res://images_Videos/BOOK BG.png" id="1_8lect"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="2_ureg5"]
+[ext_resource type="Script" path="res://scenes/TYPE2.gd" id="3_wckkx"]
+[ext_resource type="Texture2D" uid="uid://ctdxh0cbwvti0" path="res://images_Videos/neptuin.jpg" id="4_dtlhj"]
+
+[node name="BOOK SCENE 2" type="Node2D"]
+
+[node name="BookBg" type="Sprite2D" parent="."]
+position = Vector2(578, 329)
+scale = Vector2(0.808333, 0.794686)
+texture = ExtResource("1_8lect")
+
+[node name="Neptuin" type="Sprite2D" parent="."]
+position = Vector2(810, 265)
+scale = Vector2(0.344442, 0.395661)
+texture = ExtResource("4_dtlhj")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 661.0
+offset_top = 422.0
+offset_right = 955.0
+offset_bottom = 461.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_ureg5")
+theme_override_font_sizes/font_size = 21
+text = "Neptunian neighborhood
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Label" type="Label" parent="."]
+offset_left = 242.0
+offset_top = 120.0
+offset_right = 512.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("2_ureg5")
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_wckkx")

@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://75m28tcnvhbj"]
+
+[ext_resource type="Texture2D" uid="uid://bb31oemammkc8" path="res://images_Videos/BOOK BG.png" id="1_18ckq"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="2_vxydn"]
+[ext_resource type="Script" path="res://scenes/Type3.gd" id="3_b2e25"]
+[ext_resource type="Texture2D" uid="uid://b70yfptk2gow0" path="res://images_Videos/super earth.jpg" id="4_65lwl"]
+
+[node name="BOOK SCENE3" type="Node2D"]
+
+[node name="BookBg" type="Sprite2D" parent="."]
+position = Vector2(578, 329)
+scale = Vector2(0.808333, 0.794686)
+texture = ExtResource("1_18ckq")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 242.0
+offset_top = 120.0
+offset_right = 512.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("2_vxydn")
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("3_b2e25")
+
+[node name="SuperEarth" type="Sprite2D" parent="."]
+position = Vector2(812, 267)
+scale = Vector2(0.307888, 0.37603)
+texture = ExtResource("4_65lwl")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 663.0
+offset_top = 435.0
+offset_right = 950.0
+offset_bottom = 504.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_vxydn")
+text = "Kepler-22b is a super-Earth that could be covered in a super ocean."
+horizontal_alignment = 1
+autowrap_mode = 3

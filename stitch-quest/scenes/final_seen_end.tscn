@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://bneb7c8biec10"]
+[gd_scene load_steps=22 format=3 uid="uid://botgugel52io0"]
 
 [ext_resource type="Script" path="res://main_happy_stitch.gd" id="1_m1k64"]
 [ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images_Videos/Main Screen - Happy Stitch.png" id="2_q7m48"]

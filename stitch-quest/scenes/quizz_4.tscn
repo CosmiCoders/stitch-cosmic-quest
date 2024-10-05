@@ -1,6 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://t537ktnk2cv"]
+[gd_scene load_steps=8 format=3 uid="uid://ckdw5wcuaf8a"]
 
-[ext_resource type="Script" path="res://scenes/quizz_1.gd" id="1_xa1wj"]
+[ext_resource type="Script" path="res://scenes/quizz_4.gd" id="1_7to7q"]
 [ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images_Videos/Frame 5.png" id="2_70f70"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_voxk0"]
 [ext_resource type="Texture2D" uid="uid://d0e47v3c17oqw" path="res://images_Videos/correct.png" id="4_vrc5y"]
@@ -9,7 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://cvdo7tlryerg1" path="res://audio/wrongAnswer.wav" id="7_836d4"]
 
 [node name="quizz 4" type="Node2D"]
-script = ExtResource("1_xa1wj")
+script = ExtResource("1_7to7q")
 
 [node name="Frame5" type="Sprite2D" parent="."]
 position = Vector2(576, 319.25)

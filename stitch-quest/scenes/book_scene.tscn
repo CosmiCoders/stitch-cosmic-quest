@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://tvyji3tq1nsd"]
+
+[ext_resource type="Texture2D" uid="uid://bb31oemammkc8" path="res://images_Videos/BOOK BG.png" id="1_wt48r"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="2_1lhht"]
+[ext_resource type="Script" path="res://scenes/type1l.gd" id="2_l7xht"]
+[ext_resource type="Texture2D" uid="uid://csq5fmligcvyu" path="res://images_Videos/gas giants.jpg" id="4_bav26"]
+
+[node name="BOOK SCENE 1" type="Node2D"]
+
+[node name="BookBg" type="Sprite2D" parent="."]
+position = Vector2(578, 329)
+scale = Vector2(0.808333, 0.794686)
+texture = ExtResource("1_wt48r")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 242.0
+offset_top = 120.0
+offset_right = 512.0
+offset_bottom = 377.0
+theme_override_fonts/font = ExtResource("2_1lhht")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("2_l7xht")
+
+[node name="GasGiants" type="Sprite2D" parent="."]
+position = Vector2(812, 267)
+scale = Vector2(0.303647, 0.358601)
+texture = ExtResource("4_bav26")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 659.0
+offset_top = 429.0
+offset_right = 974.0
+offset_bottom = 517.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_1lhht")
+theme_override_font_sizes/font_size = 20
+text = "KELT-9 b, the hottest gas giant found so far, is hotter than most stars."
+autowrap_mode = 3

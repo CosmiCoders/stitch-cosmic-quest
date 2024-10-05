@@ -1,7 +1,7 @@
 [gd_scene load_steps=22 format=3 uid="uid://dpcrueh2b6php"]
 
 [ext_resource type="Script" path="res://main_happy_stitch.gd" id="1_2qohl"]
-[ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images_Videos/Main Screen - Happy Stitch.png" id="2_bw5dr"]
+[ext_resource type="Texture2D" uid="uid://c770fs85jm704" path="res://images_Videos/bg_without_sprite.png" id="2_ell8f"]
 [ext_resource type="AudioStream" uid="uid://bq0mwi5dwulsk" path="res://audio/mainBGsound.wav" id="3_nbltm"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="4_urbyt"]
 [ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="5_coeeu"]
@@ -190,10 +190,10 @@ corner_radius_bottom_left = 20
 [node name="flashback_lilo" type="Node2D"]
 script = ExtResource("1_2qohl")
 
-[node name="MainScreen-HappyStitch" type="Sprite2D" parent="."]
+[node name="MainScreen-noSprite" type="Sprite2D" parent="."]
 position = Vector2(576, 324.5)
 scale = Vector2(0.8, 0.782871)
-texture = ExtResource("2_bw5dr")
+texture = ExtResource("2_ell8f")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_nbltm")

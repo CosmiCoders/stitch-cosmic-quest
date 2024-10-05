@@ -1,10 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtj0y7o6wd2wu"]
+[gd_scene load_steps=8 format=3 uid="uid://brsi5kckennrn"]
 
 [ext_resource type="Script" path="res://scenes/quizz_1.gd" id="1_0l5kf"]
-[ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images/Frame 5.png" id="1_lnwy5"]
+[ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images_Videos/Frame 5.png" id="1_lnwy5"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_duw4d"]
-[ext_resource type="Texture2D" uid="uid://d0e47v3c17oqw" path="res://images/correct.png" id="4_0fn7i"]
-[ext_resource type="Texture2D" uid="uid://dngmkdn5ysfa" path="res://images/wrong.png" id="5_m2xp2"]
+[ext_resource type="Texture2D" uid="uid://d0e47v3c17oqw" path="res://images_Videos/correct.png" id="4_0fn7i"]
+[ext_resource type="Texture2D" uid="uid://dngmkdn5ysfa" path="res://images_Videos/wrong.png" id="5_m2xp2"]
 [ext_resource type="AudioStream" uid="uid://yfa4m4ar0uuc" path="res://audio/correctAnswer.wav" id="6_jj6ke"]
 [ext_resource type="AudioStream" uid="uid://cvdo7tlryerg1" path="res://audio/wrongAnswer.wav" id="7_c66le"]
 

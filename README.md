@@ -2,8 +2,7 @@
 
 Welcome to **Stitch's Cosmic Quest**, an interactive educational game designed to inspire middle school students to explore the fascinating world of exoplanets! This game was created for the **NASA Space Apps Challenge**, specifically targeting the challenge: 
 
-**Chronicles of Exoplanet Exploration**: 
-Embark on a thrilling journey to revolutionize exoplanet education! The discovery of exoplanets has redefined our understanding of planetary systems, expanding what we know about our place in the universe. From scorching gas giants to potentially habitable rocky worlds, these distant worlds offer a glimpse into the remarkable diversity of planetary configurations. Traditional educational materials about this topic may not be accessible to everyone, particularly those from underserved communities or with limited access to resources. Your challenge is to develop engaging and accessible learning materials that leverage creativity to enlighten students about the wonders of exoplanets.
+**Chronicles of Exoplanet Exploration**: revolutionizing exoplanet education!
 
 
 ## Table of Contents

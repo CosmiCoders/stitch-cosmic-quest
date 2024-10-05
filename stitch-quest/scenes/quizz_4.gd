@@ -13,7 +13,7 @@ func _on_button_a_pressed() -> void:
 	$Wrong.visible = true
 	$Wrong2.visible = true
 	await get_tree().create_timer(2).timeout
-	get_tree().change_scene_to_file("res://scenes/quizz_5.tscn")
+	get_tree().change_scene_to_file("res://scenes/final_seen.tscn")
 	
 	
 # Handle when Button B is pressed

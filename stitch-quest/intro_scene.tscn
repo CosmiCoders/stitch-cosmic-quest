@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dkj6f18pa3nda"]
+[gd_scene load_steps=3 format=3 uid="uid://bs4av2pf8x7c1"]
 
 [ext_resource type="VideoStream" path="res://images_Videos/untitled-video-made-with-clipchamp-5ahcc4.ogv" id="1_4jn3i"]
 [ext_resource type="Script" path="res://intro_scene.gd" id="2_tw5cc"]

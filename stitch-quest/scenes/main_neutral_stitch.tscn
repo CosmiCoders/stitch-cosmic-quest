@@ -243,6 +243,7 @@ offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("5_hp544")
 theme_override_font_sizes/font_size = 26
 text = "Music"
+autowrap_mode = 3
 
 [node name="Dialogue" type="Label" parent="."]
 offset_left = 248.0
@@ -251,7 +252,7 @@ offset_right = 1121.0
 offset_bottom = 622.0
 theme_override_fonts/font = ExtResource("5_hp544")
 theme_override_font_sizes/font_size = 20
-autowrap_mode = 1
+autowrap_mode = 3
 script = ExtResource("6_pioik")
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

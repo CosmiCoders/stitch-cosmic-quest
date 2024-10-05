@@ -236,6 +236,7 @@ offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("4_xg80d")
 theme_override_font_sizes/font_size = 26
 text = "Music"
+autowrap_mode = 3
 
 [node name="pause_button" type="Button" parent="Control"]
 layout_mode = 0

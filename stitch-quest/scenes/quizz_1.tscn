@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=3 uid="uid://dtj0y7o6wd2wu"]
+
+[ext_resource type="Script" path="res://scenes/quizz_1.gd" id="1_0l5kf"]
+[ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images/Frame 5.png" id="1_lnwy5"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_duw4d"]
+[ext_resource type="Texture2D" uid="uid://d0e47v3c17oqw" path="res://images/correct.png" id="4_0fn7i"]
+[ext_resource type="Texture2D" uid="uid://dngmkdn5ysfa" path="res://images/wrong.png" id="5_m2xp2"]
+[ext_resource type="AudioStream" uid="uid://yfa4m4ar0uuc" path="res://audio/correctAnswer.wav" id="6_jj6ke"]
+[ext_resource type="AudioStream" uid="uid://cvdo7tlryerg1" path="res://audio/wrongAnswer.wav" id="7_c66le"]
+
+[node name="quizz 1" type="Node2D"]
+script = ExtResource("1_0l5kf")
+
+[node name="Frame5" type="Sprite2D" parent="."]
+position = Vector2(576, 319.25)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("1_lnwy5")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 310.0
+offset_top = 103.0
+offset_right = 862.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource("3_duw4d")
+theme_override_font_sizes/font_size = 27
+text = "What are planets located outside our solar system called?
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button A" type="Button" parent="."]
+offset_left = 336.0
+offset_top = 227.0
+offset_right = 834.0
+offset_bottom = 320.0
+theme_override_colors/font_pressed_color = Color(0, 0.501961, 0, 1)
+theme_override_fonts/font = ExtResource("3_duw4d")
+theme_override_font_sizes/font_size = 28
+text = "Exoplanets"
+
+[node name="Button B" type="Button" parent="."]
+offset_left = 335.0
+offset_top = 337.0
+offset_right = 833.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("3_duw4d")
+theme_override_font_sizes/font_size = 28
+text = "Gas giants
+"
+
+[node name="Button c" type="Button" parent="."]
+offset_left = 334.0
+offset_top = 455.0
+offset_right = 832.0
+offset_bottom = 548.0
+theme_override_fonts/font = ExtResource("3_duw4d")
+theme_override_font_sizes/font_size = 28
+text = "Rogue planets"
+
+[node name="Correct" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(718, 277)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("4_0fn7i")
+
+[node name="Wrong" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(720, 382)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("5_m2xp2")
+
+[node name="Wrong2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(726, 494)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("5_m2xp2")
+
+[node name="corr" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_jj6ke")
+
+[node name="wrong" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_c66le")
+
+[connection signal="pressed" from="Button A" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="Button B" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="Button c" to="." method="_on_button_c_pressed"]

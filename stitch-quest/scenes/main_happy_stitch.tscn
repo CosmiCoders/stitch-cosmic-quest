@@ -1,10 +1,11 @@
-[gd_scene load_steps=21 format=3 uid="uid://ul6srxmwd7fk"]
+[gd_scene load_steps=22 format=3 uid="uid://ul6srxmwd7fk"]
 
-[ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images/Main Screen - Happy Stitch.png" id="1_l34cu"]
+[ext_resource type="Texture2D" uid="uid://cbak3fycdlfwa" path="res://images_Videos/Main Screen - Happy Stitch.png" id="1_l34cu"]
 [ext_resource type="Script" path="res://main_happy_stitch.gd" id="1_tvbhe"]
 [ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="2_kphwo"]
 [ext_resource type="AudioStream" uid="uid://bq0mwi5dwulsk" path="res://audio/mainBGsound.wav" id="4_fsk8c"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="5_wgeqk"]
+[ext_resource type="Script" path="res://scenes/mainHappy.gd" id="6_0wdx0"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7nve"]
 bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
@@ -197,7 +198,14 @@ texture = ExtResource("1_l34cu")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_fsk8c")
 
-[node name="MuteButton" type="CheckButton" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MuteButton" type="CheckButton" parent="Control"]
+layout_mode = 0
 offset_left = 943.0
 offset_top = 26.0
 offset_right = 1033.0
@@ -219,7 +227,18 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ici0n")
 theme_override_styles/normal = SubResource("StyleBoxFlat_notkb")
 icon_alignment = 1
 
-[node name="pause_button" type="Button" parent="."]
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 962.0
+offset_top = 34.0
+offset_right = 1057.0
+offset_bottom = 72.0
+theme_override_fonts/font = ExtResource("5_wgeqk")
+theme_override_font_sizes/font_size = 26
+text = "Music"
+
+[node name="pause_button" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 35.0
 offset_top = 23.0
 offset_right = 96.0
@@ -233,15 +252,17 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_7x0qf")
 text = "| |"
 icon_alignment = 1
 
-[node name="Label" type="Label" parent="."]
-offset_left = 962.0
-offset_top = 34.0
-offset_right = 1057.0
-offset_bottom = 72.0
+[node name="Dialogue" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 255.0
+offset_top = 487.0
+offset_right = 1122.0
+offset_bottom = 619.0
 theme_override_fonts/font = ExtResource("5_wgeqk")
-theme_override_font_sizes/font_size = 26
-text = "Music"
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+script = ExtResource("6_0wdx0")
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
-[connection signal="toggled" from="MuteButton" to="." method="_on_mute_button_toggled"]
-[connection signal="pressed" from="pause_button" to="." method="_on_pause_button_pressed"]
+[connection signal="toggled" from="Control/MuteButton" to="." method="_on_mute_button_toggled"]
+[connection signal="pressed" from="Control/pause_button" to="." method="_on_pause_button_pressed"]

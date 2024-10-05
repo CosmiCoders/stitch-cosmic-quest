@@ -12,4 +12,4 @@ func _process(delta: float) -> void:
 
 
 func _on_finished() -> void:
-	get_tree().change_scene_to_file("res://scenes/main_happy_stitch.tscn")
+	get_tree().change_scene_to_file("res://scenes/main_neutral_stitch.tscn")

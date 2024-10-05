@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=3 uid="uid://dgje3liqa5dje"]
+
+[ext_resource type="Script" path="res://scenes/quizz_3.gd" id="1_bh63j"]
+[ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images_Videos/Frame 5.png" id="2_dbofm"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_7v6do"]
+[ext_resource type="Texture2D" uid="uid://d0e47v3c17oqw" path="res://images_Videos/correct.png" id="4_wo845"]
+[ext_resource type="Texture2D" uid="uid://dngmkdn5ysfa" path="res://images_Videos/wrong.png" id="5_5d4an"]
+[ext_resource type="AudioStream" uid="uid://yfa4m4ar0uuc" path="res://audio/correctAnswer.wav" id="6_ksd5q"]
+[ext_resource type="AudioStream" uid="uid://cvdo7tlryerg1" path="res://audio/wrongAnswer.wav" id="7_uqiiy"]
+
+[node name="quizz 3" type="Node2D"]
+script = ExtResource("1_bh63j")
+
+[node name="Frame5" type="Sprite2D" parent="."]
+position = Vector2(576, 319.25)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("2_dbofm")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 310.0
+offset_top = 103.0
+offset_right = 862.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource("3_7v6do")
+theme_override_font_sizes/font_size = 27
+text = "What are gas giants mostly composed of?"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button A" type="Button" parent="."]
+offset_left = 336.0
+offset_top = 227.0
+offset_right = 834.0
+offset_bottom = 320.0
+theme_override_colors/font_pressed_color = Color(0, 0.501961, 0, 1)
+theme_override_fonts/font = ExtResource("3_7v6do")
+theme_override_font_sizes/font_size = 28
+text = "Carbon and nitrogen"
+
+[node name="Button B" type="Button" parent="."]
+offset_left = 335.0
+offset_top = 337.0
+offset_right = 833.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("3_7v6do")
+theme_override_font_sizes/font_size = 28
+text = "Helium and hydrogen"
+
+[node name="Button c" type="Button" parent="."]
+offset_left = 334.0
+offset_top = 455.0
+offset_right = 832.0
+offset_bottom = 548.0
+theme_override_fonts/font = ExtResource("3_7v6do")
+theme_override_font_sizes/font_size = 28
+text = "Oxygen and water"
+
+[node name="Correct" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(718, 386)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("4_wo845")
+
+[node name="Wrong" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(720, 275)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("5_5d4an")
+
+[node name="Wrong2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(726, 494)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("5_5d4an")
+
+[node name="corr" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_ksd5q")
+
+[node name="wrong" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_uqiiy")
+
+[connection signal="pressed" from="Button A" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="Button B" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="Button c" to="." method="_on_button_c_pressed"]

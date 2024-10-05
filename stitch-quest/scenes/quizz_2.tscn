@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=3 uid="uid://bslmtuyk61s5"]
+
+[ext_resource type="Script" path="res://scenes/quizz_2.gd" id="1_d6hi3"]
+[ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images_Videos/Frame 5.png" id="2_wbrva"]
+[ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="3_vypxv"]
+[ext_resource type="Texture2D" uid="uid://d0e47v3c17oqw" path="res://images_Videos/correct.png" id="4_8ftar"]
+[ext_resource type="Texture2D" uid="uid://dngmkdn5ysfa" path="res://images_Videos/wrong.png" id="5_k3ibu"]
+[ext_resource type="AudioStream" uid="uid://yfa4m4ar0uuc" path="res://audio/correctAnswer.wav" id="6_mjhpx"]
+[ext_resource type="AudioStream" uid="uid://cvdo7tlryerg1" path="res://audio/wrongAnswer.wav" id="7_tlr3c"]
+
+[node name="quizz 2" type="Node2D"]
+script = ExtResource("1_d6hi3")
+
+[node name="Frame5" type="Sprite2D" parent="."]
+position = Vector2(576, 319.25)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("2_wbrva")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 310.0
+offset_top = 103.0
+offset_right = 862.0
+offset_bottom = 202.0
+theme_override_fonts/font = ExtResource("3_vypxv")
+theme_override_font_sizes/font_size = 27
+text = "What is 51 Pegasi b classified as?
+"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button A" type="Button" parent="."]
+offset_left = 336.0
+offset_top = 227.0
+offset_right = 834.0
+offset_bottom = 320.0
+theme_override_colors/font_pressed_color = Color(0, 0.501961, 0, 1)
+theme_override_fonts/font = ExtResource("3_vypxv")
+theme_override_font_sizes/font_size = 28
+text = " A Super-Earth"
+
+[node name="Button B" type="Button" parent="."]
+offset_left = 335.0
+offset_top = 337.0
+offset_right = 833.0
+offset_bottom = 430.0
+theme_override_fonts/font = ExtResource("3_vypxv")
+theme_override_font_sizes/font_size = 28
+text = " A hot Jupiter
+"
+
+[node name="Button c" type="Button" parent="."]
+offset_left = 334.0
+offset_top = 455.0
+offset_right = 832.0
+offset_bottom = 548.0
+theme_override_fonts/font = ExtResource("3_vypxv")
+theme_override_font_sizes/font_size = 28
+text = " A dwarf planet"
+
+[node name="Correct" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(718, 386)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("4_8ftar")
+
+[node name="Wrong" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(720, 275)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("5_k3ibu")
+
+[node name="Wrong2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(726, 494)
+scale = Vector2(0.801389, 0.792874)
+texture = ExtResource("5_k3ibu")
+
+[node name="corr" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_mjhpx")
+
+[node name="wrong" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_tlr3c")
+
+[connection signal="pressed" from="Button A" to="." method="_on_button_a_pressed"]
+[connection signal="pressed" from="Button B" to="." method="_on_button_b_pressed"]
+[connection signal="pressed" from="Button c" to="." method="_on_button_c_pressed"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkj6f18pa3nda"]
+
+[ext_resource type="VideoStream" path="res://images_Videos/untitled-video-made-with-clipchamp-5ahcc4.ogv" id="1_4jn3i"]
+[ext_resource type="Script" path="res://intro_scene.gd" id="2_tw5cc"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -266.0
+offset_top = -190.0
+offset_right = 265.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_4jn3i")
+autoplay = true
+expand = true
+script = ExtResource("2_tw5cc")
+
+[connection signal="finished" from="." to="." method="_on_finished"]

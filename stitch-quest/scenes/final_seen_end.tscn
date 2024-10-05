@@ -187,7 +187,7 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[node name="final_seen" type="Node2D"]
+[node name="final_seen_end" type="Node2D"]
 script = ExtResource("1_m1k64")
 
 [node name="MainScreen-HappyStitch" type="Sprite2D" parent="."]
@@ -235,7 +235,7 @@ offset_right = 1057.0
 offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("4_t7c1d")
 theme_override_font_sizes/font_size = 26
-text = "Music"
+text = "Mute"
 autowrap_mode = 3
 
 [node name="pause_button" type="Button" parent="Control"]

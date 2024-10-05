@@ -29,7 +29,7 @@ func display_next_section():
 		typewrite_text() # Start typewriting effect
 	else:
 		# All sections have been shown, you can handle what happens next here
-		get_tree().change_scene_to_file("res://scenes/book_scene_3.tscn")
+		get_tree().change_scene_to_file("res://scenes/quizz_2.tscn")
 
 # Typewriting effect
 func typewrite_text() -> void:

@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://bq0mwi5dwulsk" path="res://audio/mainBGsound.wav" id="3_x42ky"]
 [ext_resource type="FontFile" uid="uid://bsl2o6gwrae7w" path="res://fonts/Audiowide-Regular.ttf" id="4_xg80d"]
 [ext_resource type="FontFile" uid="uid://d3tkbvadtkrv" path="res://fonts/Poppins-SemiBold.ttf" id="5_u3im7"]
-[ext_resource type="Script" path="res://scenes/final.gd" id="6_hbrdv"]
+[ext_resource type="Script" path="res://scenes/finalonlyplease.gd" id="6_jusj3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7nve"]
 bg_color = Color(0.372549, 0.00392157, 0.262745, 1)
@@ -187,7 +187,7 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[node name="final_seen_end" type="Node2D"]
+[node name="final_seen" type="Node2D"]
 script = ExtResource("1_6v3is")
 
 [node name="MainScreen-HappyStitch" type="Sprite2D" parent="."]
@@ -235,7 +235,7 @@ offset_right = 1057.0
 offset_bottom = 72.0
 theme_override_fonts/font = ExtResource("4_xg80d")
 theme_override_font_sizes/font_size = 26
-text = "Music"
+text = "Mute"
 autowrap_mode = 3
 
 [node name="pause_button" type="Button" parent="Control"]
@@ -262,7 +262,7 @@ offset_bottom = 619.0
 theme_override_fonts/font = ExtResource("4_xg80d")
 theme_override_font_sizes/font_size = 20
 autowrap_mode = 3
-script = ExtResource("6_hbrdv")
+script = ExtResource("6_jusj3")
 
 [connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]
 [connection signal="toggled" from="Control/MuteButton" to="." method="_on_mute_button_toggled"]

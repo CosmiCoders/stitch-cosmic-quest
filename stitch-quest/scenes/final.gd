@@ -6,7 +6,7 @@ var dialogue = [
 	"YES! We did it! The portal’s open! Looks like teamwork really does make the dream work, huh?",
 	"[Stitch looks back at the alien landscape one last time, with a mix of excitement and nostalgia.]",
 	"Man, what a crazy adventure! But now it’s time to get back to Earth… and to Lilo. (He winks at the audience.) Thanks for your help, buddy! I couldn’t have done it without you.",
-	"[The screen fades to black, and the words 'To be continued...' appear, hinting at more adventures to come.]"
+	"[To Be Continued]"
 ]
 
 var typing_speed = 0.05  # The delay between each letter (in seconds)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgje3liqa5dje"]
+[gd_scene load_steps=8 format=3 uid="uid://m5ctr8n2yta"]
 
 [ext_resource type="Script" path="res://scenes/quizz_3.gd" id="1_bh63j"]
 [ext_resource type="Texture2D" uid="uid://buku8iypxnu06" path="res://images_Videos/Frame 5.png" id="2_dbofm"]

@@ -33,7 +33,7 @@ Our project addresses the **lack of public awareness and specialized astronomy c
 
 - Godot Game Engine: For game development.
 - GDScript: Programming language used for scripting within Godot.
-- 
+  
 ## How to Play
 
 1. **Install Godot**: Download and install the [Godot Game Engine](https://godotengine.org/).
